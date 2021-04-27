@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Change Me!</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <br>
+  <h1 class="cAlign"><b>Travel</b> Co.</h1>
+  
+  <section class="splitCol widthWrap">
+    <form class="loginForm">
+      <h1>Login</h1>
+      <input type="text" placeholder="Username"/>
+      <input type="text" placeholder="Password"/>
+      <input type="submit" value="Login">
+    </form>
+    <form class="loginForm">
+      <h1>Create Account</h1>
+      <input type="text" placeholder="First Name*"/>
+      <input type="text" placeholder="Last Name*"/>
+      <input type="text" placeholder="@ Email*"/>
+      <input class="match" type="text" placeholder="Password*"/>
+      <input class="noMatch"type="text" placeholder="Reapeat Password*"/>
+      <p>Password does not match</p>
+      <input type="submit" value="Create Account">
+    </form>
+  </section>
+  
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#countrySlider").lightSlider({
+        controls: true,
+        item: 3,
+        pager: false,
+        enableTouch: true,
+        auto: true,
+        loop: true,
+        pauseOnHover: true,
+      }); 
+      $("#holidaySlider").lightSlider({
+        controls: true,
+        item: 2.8,
+        pager: true,
+        enableTouch: true,
+      }); 
+    });
+  </script>
+    
+</body>
+</html>

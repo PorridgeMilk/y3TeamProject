@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>holiday page</title>
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+      collapsible: true
+    });
+  } );
+  </script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="smallHeader">
+    <div id="floatingNav">
+      <div class="logo">
+        <h1><b>Travel</b> Co.</h1>
+      </div>
+      <nav>
+        <a><h2 class="active">Homepage</h2></a>
+        <a><h2>nav element</h2></a>
+        <a><h2>nav element</h2></a>
+      </nav>
+      <div id="login">
+        <a><h2 class="active">Login</h2></a>
+      </div>
+    </div>
+    <!-- Header Search -->
+    <div id="search">
+      <input id="searchLocation" type="text" placeholder="Location"/>
+      <input type="submit">
+    </div>
+  </header>
+  <main>
+    <!-- View single hotel, more info -->
+    <div class="widthWrap splitCol">
+      <div class="hotel">
+        <p>Hotels > United Arab Emerates > Dubai > <b>Hotel Name</b></p>
+        <h1>Hotel name</h1>
+        <h2>Hotel Location here</h2>
+        <div class="splitCol">
+          <p>Star rating</p>
+          <span class="price"><p>From</p><h2>425pp</h2></span>
+        </div>
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        
+        <article>
+          <h1>Holiday Description</h1>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <ul>
+              <li>List of items example</li>
+              <li>List of items example</li>
+              <li>List of items example</li>
+              <li>List of items example</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+          <h1>Location</h1>
+          <div>
+            <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+            purus. Vivamus hendrerit, dolor at aliquet laoreet.<br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6248295.730080362!2d-8.203917807266821!3d40.12166038159105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2suk!4v1582660297763!5m2!1sen!2suk" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <br>
+          <!-- Review form -->
+          
+          <h1>Reviews</h1>
+          <div class="splitCol reviewInfo reviewInfoHeader">
+            <img src="img/rating3.jpg">
+            <p>(22 reviews)</p>
+          </div>
+          <span class="splitCol reviewInfo">
+            <p>Cleanliness:</p>
+            <img src="img/rating5.jpg">
+          </span>
+          <span class="splitCol reviewInfo">
+            <p>Value:</p>
+            <img src="img/rating1.jpg">
+          </span>
+          <span class="splitCol reviewInfo">
+            <p>Service:</p>
+            <img src="img/rating3.jpg">
+          </span>
+          
+          <input class="viewBtn" type="submit" value="leave a review">
+          <br>
+          
+          <div class="fullReview">
+            <p><b>Review Title</b></p>
+            <div class="splitCol">
+              <img src="img/rating5.jpg">
+              <p> 10 Jan 2020, </p>
+              <p> Useraname</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          </div>
+          <div class="fullReview">
+            <p><b>Review Title</b></p>
+            <div class="splitCol">
+              <img src="img/rating1.jpg">
+              <p> 10 Jan 2020, </p>
+              <p> Useraname</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          </div>
+          
+          <form class="reviewForm">
+            <h1>Review Form</h1>
+            <div class="splitCol">
+              <p><b>Star Rating: </b></p>
+              <div id="checkboxes">
+                <div class="checkboxgroup">
+                  <label for="1star">1</label>
+                  <input type="radio" name="radio" id="1star" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="2star">2</label>
+                  <input type="radio" name="radio" id="2star" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="3star">3</label>
+                  <input type="radio" name="radio" id="3star" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="4star">4</label>
+                  <input type="radio" name="radio" id="4star" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="5star">5</label>
+                  <input type="radio" name="radio" id="5star" />
+                </div>
+              </div>
+            </div>
+            <div class="splitCol">
+              <p><b>Cleanliness: </b></p>
+              <div id="checkboxes">
+                <div class="checkboxgroup">
+                  <label for="1clean">1</label>
+                  <input type="radio" name="cleanradio" id="1clean" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="2clean">2</label>
+                  <input type="radio" name="cleanradio" id="2clean" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="3clean">3</label>
+                  <input type="radio" name="cleanradio" id="3clean" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="4clean">4</label>
+                  <input type="radio" name="cleanradio" id="4clean" />
+                </div>
+                <div class="checkboxgroup">
+                  <label for="5clean">5</label>
+                  <input type="radio" name="cleanradio" id="5clean" />
+                </div>
+              </div>
+            </div>
+            <input type="text" placeholder="Location"/>
+            <input type="text" placeholder="Room"/>
+            <p><b>Review:</b></p>
+            <input type="text" placeholder="Title of review"/>
+            <textarea placeholder="Review message here"></textarea><br><br>
+            <input class="viewBtn" type="submit" value="Submit Review">
+          </form><!-- End of review form -->
+          
+        </article>
+        
+      </div>
+      <aside>
+        <div class="cAlign hotelContinue">
+          <span class="price">&#163;<h2>425pp</h2></span>
+          <br>
+          <span class="price"><p>Total Price &#163;</p><h2>850</h2></span>
+          <input class="viewBtn" type="submit" value="Continue">
+        </div>
+        
+        
+        <div class="basicHoliday">
+          <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+          <h2 class="accent">Hotel Country, and City</h2>
+          <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+          <span class="price"><p>From</p><h2>425pp</h2></span><input class="viewBtn" type="submit" value="View Holiday">
+        </div>
+        <div class="basicHoliday">
+          <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+          <h2 class="accent">Hotel Country, and City</h2>
+          <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+          <span class="price"><p>From</p><h2>425pp</h2></span><input class="viewBtn" type="submit" value="View Holiday">
+        </div>
+        <div class="basicHoliday">
+          <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+          <h2 class="accent">Hotel Country, and City</h2>
+          <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+          <span class="price"><p>From</p><h2>425pp</h2></span><input class="viewBtn" type="submit" value="View Holiday">
+        </div>
+      </aside>
+    </div>
+    
+    <!-- Small basic holiday suggestion -->
+    <h1 class="cAlign"><br>Similar Holidays</h1>
+    <section class="widthWrap splitCol basicHolidayWrap">
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <div class="widthWrap splitCol">
+      <div><p>Content Left</p></div>
+      <div><p>Content Right</p></div>
+    </div>
+    <footer>
+      <h1 class="cAlign"><b>Travel</b> Co.</h1>
+    </footer>
+  </footer>
+    
+</body>
+</html>

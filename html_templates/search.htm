@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rename Me!</title>
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+      collapsible: true
+    });
+    
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 100,
+      max: 1500,
+      values: [ 300, 1000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+      }
+    });
+    
+    $( "#amount" ).val( "£" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - £" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="smallHeader">
+    <div id="floatingNav">
+      <div class="logo">
+        <h1><b>Travel</b> Co.</h1>
+      </div>
+      <nav>
+        <a><h2 class="active">Homepage</h2></a>
+        <a><h2>nav element</h2></a>
+        <a><h2>nav element</h2></a>
+      </nav>
+      <div id="login">
+        <a><h2 class="active">Login</h2></a>
+      </div>
+    </div>
+    <!-- Header Search -->
+    <div id="search">
+      <input id="searchLocation" type="text" placeholder="Location"/>
+      <input type="submit">
+    </div>
+  </header>
+  <main>
+    <!-- Search results -->
+    <div class="widthWrap splitCol">
+      <!-- List of search results here -->
+      <section>
+        <p class="searchTxt">Search results for "your search term"</p>
+        <!-- individual result -->
+        <a href="#" class="splitCol searchResult">
+          <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+          <div class="resultInfo">
+            <h1>Hotel Name</h1>
+            <h2>Hotel Location</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="splitCol">
+              <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+              <span class="price"><p>From</p><h2>425pp</h2></span>
+            </div>  
+          </div>
+        </a>
+        <!-- individual result -->
+        <a href="#" class="splitCol searchResult">
+          <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+          <div class="resultInfo">
+            <h1>Hotel Name</h1>
+            <h2>Hotel Location</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="splitCol">
+              <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+              <span class="price"><p>From</p><h2>425pp</h2></span>
+            </div>  
+          </div>
+        </a>
+        <!-- individual result -->
+        <a href="#" class="splitCol searchResult">
+          <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+          <div class="resultInfo">
+            <h1>Hotel Name</h1>
+            <h2>Hotel Location</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="splitCol">
+              <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+              <span class="price"><p>From</p><h2>425pp</h2></span>
+            </div>  
+          </div>
+        </a>
+      </section>
+      <aside>
+        <!-- search filters here -->
+        <p>
+          <label for="amount">Price range:</label>
+          <input type="text" id="amount" readonly style="border:0; color:#28a9fd; font-weight:bold;">
+        </p>
+        <div id="slider-range"></div>
+        <br>
+        <p>Board Type:</p>
+        <div class="btnCheck">
+          <input type="checkbox" name="checkbox-1" id="checkbox-1">
+          <label class="check" for="checkbox-1">Half Board</label>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2">
+          <label class="check" for="checkbox-2">Full Board</label>
+          <input type="checkbox" name="checkbox-3" id="checkbox-3">
+          <label class="check" for="checkbox-3">All Inclusive</label>
+        </div>
+        <br>
+        <p>Countrys:</p>
+        <div>
+          <input type="checkbox" name="country-1" id="country-1">
+          <label class="check" for="country-1">Spain</label><br>
+          <input type="checkbox" name="country-2" id="country-2">
+          <label class="check" for="country-2">Iceland</label><br>
+          <input type="checkbox" name="country-3" id="country-3">
+          <label class="check" for="country-3">France</label><br>
+        </div>
+        
+        <br><br>
+        <input class="viewBtn" type="submit" value="Filter Search">
+      </aside>
+    </div>
+    
+    <!-- Small basic holiday suggestion -->
+    <h1 class="cAlign"><br>Similar Holidays</h1>
+    <section class="widthWrap splitCol basicHolidayWrap">
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+      <!-- small Basic holiday -->
+      <div class="basicHoliday">
+        <img src="https://a.loveholidays.com/images/holidays/26667165c6c6070107047d269ff250259185a663/holidays/united-arab-emirates/dubai/the-palm-jumeirah/dukes-the-palm-a-royal-hideaway-hotel-0.jpg?auto=webp&fit=crop&height=576&width=880&quality=60"/>
+        <h2 class="accent">Hotel Country, and City</h2>
+        <div class="rating"><img src="img/ratingPlaceholder.jpg"/></div>
+        <span class="price"><p>From</p><h2>425pp</h2></span>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <div class="widthWrap splitCol">
+      <div><p>Content Left</p></div>
+      <div><p>Content Right</p></div>
+    </div>
+    <footer>
+      <h1 class="cAlign"><b>Travel</b> Co.</h1>
+    </footer>
+  </footer>
+    
+</body>
+</html>
